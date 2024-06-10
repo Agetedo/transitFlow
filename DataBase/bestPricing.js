@@ -1,0 +1,28 @@
+export const bestPricing = [{
+    id: "bPri01",
+    title: "Basic",
+    pricing: "$39/ month",
+    truck: "Single Truck",
+    insurance: "Full Insurance",
+    pathKm: "300 Km",
+    realTime: "Real-time rate shopping",
+    buttonText: "Choose Plan",
+}, {
+    id: "bPri02",
+    title: "Standard",
+    pricing: "$59/ month",
+    truck: "Single Truck",
+    insurance: "Full Insurance",
+    pathKm: "500 Km",
+    realTime: "Real-time rate shopping",
+    buttonText: "Choose Plan",
+}, {
+    id: "bPri03",
+    title: "Premium",
+    pricing: "$89/ month",
+    truck: "Double Truck",
+    insurance: "Full Insurance",
+    pathKm: "Unlimitted",
+    realTime: "Real-time rate shopping",
+    buttonText: "Choose Plan",
+}];

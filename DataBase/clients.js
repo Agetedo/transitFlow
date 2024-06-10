@@ -1,0 +1,41 @@
+export const clients = [{
+    id: "clienT01",
+    imgSrc: "/client-image-logo01.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo01.png",
+}, {
+    id: "clienT02",
+    imgSrc: "/client-image-logo02.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo02.png",
+}, {
+    id: "clienT03",
+    imgSrc: "/client-image-logo03.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo03.png",
+},{
+    id: "clienT04",
+    imgSrc: "/client-image-logo04.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo04.png",
+}, {
+    id: "clienT05",
+    imgSrc: "/client-image-logo01.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo01.png",
+}, {
+    id: "clienT06",
+    imgSrc: "/client-image-logo02.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo02.png",
+}, {
+    id: "clienT07",
+    imgSrc: "/client-image-logo03.jpeg",
+    linkTo: "https://www.google.com/", 
+    hoverLogo: "/client-logo03.png",
+}, {
+    id: "clienT08",
+    imgSrc: "/client-image-logo04.jpeg",
+    linkTo: "https://www.google.com/",
+    hoverLogo: "/client-logo04.png",
+}];

@@ -1,0 +1,36 @@
+export const transportingCards = [{
+    id: "trC01",
+    imageSrc: "/transporting-card-image01.jpeg",
+    imageAlt: "Tanker",
+    linkTo: "/project-page",
+    title: "Liquid Transportation",
+    kind: "Premium Tankers",
+}, {
+    id: "trC02",
+    imageSrc: "/transporting-card-image02.jpeg",
+    imageAlt: "Two people at a table",
+    linkTo: "/project-page",
+    title: "Packaging Solutions",
+    kind: "Warehouse Management",
+}, {
+    id: "trC03",
+    imageSrc: "/transporting-card-image03.jpeg",
+    imageAlt: "Autotruck",
+    linkTo: "/project-page",
+    title: "Contract Logistics",
+    kind: "Road Transportation", 
+}, {
+    id: "trC04",
+    imageSrc: "/transporting-card-image04.jpeg",
+    imageAlt: "Cargo containers",
+    linkTo: "/project-page",
+    title: "Warehouse & Distribution",
+    kind: "Large Warehouse", 
+}, {
+    id: "trC05",
+    imageSrc: "/transporting-card-image05.jpeg",
+    imageAlt: "Ship with cargo containers on board",
+    linkTo: "/project-page",
+    title: "Specialized Transport",
+    kind: "Ocean Transports",  
+}];

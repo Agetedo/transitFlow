@@ -1,0 +1,43 @@
+export const projectMenu = [{
+    id: "prMN01",
+    imgSrc: "/project-1-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details01-page",
+    caption: "Project:",
+    title: '"Convenient transportation"',
+}, {
+    id: "prMN02",
+    imgSrc: "/project-2-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details02-page",
+    caption: "Project:",
+    title: '"Warehouse rent"',
+}, {
+    id: "prMN03",
+    imgSrc: "/project-3-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details03-page",
+    caption: "Project:",
+    title: '"Own loading service"',
+}, {
+    id: "prMN04",
+    imgSrc: "/project-4-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details04-page",
+    caption: "Project:",
+    title: '"24/7 service and support"',
+}, {
+    id: "prMN05",
+    imgSrc: "/project-5-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details05-page",
+    caption: "Project:",
+    title: '"To anywhere in the world"',
+}, {
+    id: "prMN06",
+    imgSrc: "/project-6-image.png",
+    imgAlt: "Project Photo",
+    linkTo: "/project-details06-page",
+    caption: "Project:",
+    title: '"Transportation by different modes"',
+}];
