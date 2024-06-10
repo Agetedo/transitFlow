@@ -1,0 +1,84 @@
+.why-us__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.indicator {
+  padding: 30px 90px 30px 90px;
+  border-top: 1px solid #D5D5D5;
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  .caption {
+    font-family: 'League Spartan';
+    font-size: 29px;
+    line-height: 29px;
+    color: transparent;  
+	  background-clip: text;
+	  background-image: linear-gradient(174deg, rgb(9, 18, 66) 30%, rgb(150 153 178) 60%);
+  }
+}
+.indicator__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #D5D5D5;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  animation: ping 4s ease-in-out infinite both;
+  span {
+   padding: 5px;
+    align-self: center;
+    font-family: 'Rubik';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: var(--yellow-color);
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    opacity: 1.0;
+  }
+  85% {
+    -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 0;
+  }
+}
+//---@media-why-us------------------
+@media(max-width: 1228px) {
+  .indicator {
+    padding: calc(15px + (30 - 15)*((100vw - 1024px)/(1228 - 1024)))
+             calc(56px + (90 - 56)*((100vw - 1024px)/(1228 - 1024)))
+             calc(15px + (30 - 15)*((100vw - 1024px)/(1228 - 1024)))
+             calc(56px + (90 - 56)*((100vw - 1024px)/(1228 - 1024)));
+    gap: calc(12px + (25 - 12)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .indicator__wrapper {
+    width: calc(100px + (150 - 100)*((100vw - 1024px)/(1228 - 1024)));
+    height: calc(100px + (150 - 100)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .indicator__wrapper span {
+    font-size: calc(32px + (50 - 32)*((100vw - 1024px)/(1228 - 1024)));
+    line-height: calc(32px + (50 - 32)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .indicator .caption {
+    font-size: calc(22px + (29 - 22)*((100vw - 1024px)/(1228 - 1024)));
+    line-height: calc(22px + (29 - 22)*((100vw - 1024px)/(1228 - 1024)))
+  }
+}
+@media(max-width: 1024px) {
+  .why-us__indicators {
+    display: none;
+  }
+}

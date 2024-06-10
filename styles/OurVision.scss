@@ -1,0 +1,88 @@
+.vision {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.vision__items {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 72px;
+}
+.vision-showing__items p {
+  max-width: 560px;
+  line-height: 24px;
+}
+.vision__points {
+  margin-top: 60px;
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+.vision-showing__text {
+  max-width: 230px;
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-family: 'Rubik';
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--dark-blue-text-color);
+    text-transform: capitalize;
+  }
+  p {
+    line-height: 24px;
+    text-wrap: pretty;
+  }
+}
+#visionGallery {
+  width: 566px;
+}
+.vision-slide {
+  border-left: 15px solid var(--yellow-color);
+  border-radius: 25% 0% 0% 0%;
+}
+//---@media-vision---------------
+@media(max-width: 1228px) {
+  .vision {
+    margin-top: calc(36px + (100 - 36)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(36px + (100 - 36)*((100vw - 320px)/(1228 - 320)));
+  }
+  .vision__items {
+    margin-top: calc(18px + (50 - 18)*((100vw - 320px)/(1228 - 320)));
+    gap: calc(30px + (72 - 30)*((100vw - 768px)/(1228 - 768)));
+  }
+  .vision-showing__items p {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(18px + (24 - 18)*((100vw - 320px)/(1228 - 320)));
+  }
+  .vision-showing__text h3 {
+    margin-top: calc(6px + (10 - 6)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(3px + (12 - 3)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(17px + (25 - 17)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(23px + (30 - 23)*((100vw - 320px)/(1228 - 320)));
+  }
+  .vision-showing img {
+    width: calc(25px + (50 - 25)*((100vw - 320px)/(1228 - 320)));
+  }
+  .vision__points {
+    margin-top: calc(19px + (60 - 19)*((100vw - 320px)/(1228 - 320)));
+    gap: calc(34px + (100 - 34)*((100vw - 769px)/(1228 - 769)));
+  }
+}
+@media(max-width: 768px) {
+  #visionGallery {
+    display: none;
+  }
+  .vision-showing__items p,
+  .vision-showing__text {
+    max-width: 100%;
+  }
+  .vision__items {
+    gap: 0px;
+  }
+  .vision__points {
+    flex-direction: column;
+    gap: calc(19px + (30 - 19)*((100vw - 320px)/(768 - 320)));
+  }
+}

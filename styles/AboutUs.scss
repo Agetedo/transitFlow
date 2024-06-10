@@ -1,0 +1,181 @@
+.about-us {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.ovierview-caption {
+  margin-top: 12px;
+  line-height: 24px;
+  text-wrap: pretty;
+}
+%yellow-gradient-color {
+  background: linear-gradient(180deg,rgb(248, 200, 142) 30%, rgb(255, 182, 41) 60%);
+}
+%yellow-button {
+  border: none;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 194px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @extend %yellow-gradient-color;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: var(--dark-blue-text-color);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+@keyframes yellow-color-change {
+  50% {
+    background: linear-gradient(180deg,rgb(255, 182, 41) 30%, rgb(248, 200, 142) 60%);
+  }
+}
+%blue-gradient-color {
+  background: linear-gradient(180deg, rgba(31, 42, 105) 30%, rgba(9, 18, 66) 60%,);
+}
+%dark-blue-button {
+  border: none;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 194px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @extend %blue-gradient-color;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: var(--white-color);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+@keyframes blue-color-change {
+  50% {
+    background: linear-gradient(180deg, rgba(9, 18, 66) 30%, rgba(31, 42, 105) 60%);
+  }
+}
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+  &__tab-list {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  &__tab {
+    @extend %yellow-button;
+
+    &--selected {
+      animation: none !important;
+      @extend %blue-gradient-color;
+      color: var(--white-color);
+      cursor: default;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &--disabled {
+      background-color: var(--caption-center-bg);
+      cursor: default;
+    }
+
+    &:focus {
+      outline: none;
+      cursor: default;
+    }
+  }
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+.react-tabs__tab-panel img {
+  max-width: 61%;
+}
+.tab-panel__content {
+  .text {
+    margin-bottom: 20px; 
+    font-style: italic; 
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--tab-panel-text-color);
+    text-wrap: pretty;
+  }
+}
+.tab-panel__content .text::first-letter {
+  font-size: 130%;
+}
+.tab-panel__link {
+  @extend %dark-blue-button;
+}
+//---@media-about-us--------------
+@media (hover: hover) and (pointer: fine) {
+  .react-tabs__tab:hover {
+    animation: yellow-color-change 0.5s linear infinite alternate both;
+  }
+  .tab-panel__link:hover {
+    animation: blue-color-change 0.5s linear infinite alternate both;
+  }
+}
+@media (hover: none) {
+  .react-tabs__tab:active {
+    animation: yellow-color-change 0.5s linear infinite alternate both;
+  }
+  .tab-panel__link:active {
+    animation: blue-color-change 0.5s linear infinite alternate both;
+  }
+}
+@media(max-width: 1228px) {
+  .about-us {
+    margin-top: calc(36px + (100 - 36)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(36px + (100 - 36)*((100vw - 320px)/(1228 - 320)));
+  }
+  .ovierview-caption {
+    margin-top: calc(6px + (12 - 6)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(18px + (24 - 18)*((100vw - 320px)/(1228 - 320)));
+  }
+  .react-tabs__tab-list {
+    margin-top: calc(10px + (20 - 10)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(20px + (30 - 20)*((100vw - 320px)/(1228 - 320)));
+    gap: calc(10px + (50 - 10)*((100vw - 320px)/(1228 - 320)));
+  }
+  .react-tabs__tab {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    width: calc(123px + (194 - 123)*((100vw - 320px)/(1228 - 320)));
+    height: calc(34px + (60 - 34)*((100vw - 320px)/(1228 - 320)));
+  }
+  .react-tabs__tab-panel--selected {
+    gap: calc(20px + (40 - 20)*((100vw - 320px)/(1228 - 320)));
+  }
+  .tab-panel__content .text {
+    margin-bottom: calc(10px + (20 - 10)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(11px + (14 - 11)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(16px + (21 - 16)*((100vw - 320px)/(1228 - 320)));
+  }
+  .tab-panel__link { 
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    width: calc(123px + (194 - 123)*((100vw - 320px)/(1228 - 320)));
+    height: calc(34px + (60 - 34)*((100vw - 320px)/(1228 - 320)));
+  }
+}
+@media(max-width: 1024px) {
+  .react-tabs__tab-panel--selected {
+    flex-direction: column;
+  }
+  .react-tabs__tab-panel img {
+    max-width: 100%;
+  }
+}

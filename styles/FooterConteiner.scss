@@ -1,0 +1,17 @@
+.footer {
+  background-color: var(--blue-color);
+  padding-top: 43px;
+  padding-bottom: 18px;
+  .conteiner {
+    max-width: 1228px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}
+//---@media-footer-------------------
+@media(max-width: 1228px) {
+  .footer {
+    padding-top: calc(21px + (43 - 21)*((100vw - 320px)/(1228 - 320)));
+    padding-bottom: calc(10px + (18 - 10)*((100vw - 320px)/(1228 - 320)));
+  }
+}

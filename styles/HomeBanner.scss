@@ -1,0 +1,12 @@
+.home-page__banner {
+  img {
+    width: 100%;
+    margin: 0 auto;
+  } 
+}
+//---@media-home-page__banner-----------
+@media(max-width: 1024px) {
+  .home-page__banner img {
+    display: none;
+  }
+}

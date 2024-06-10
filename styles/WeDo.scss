@@ -1,0 +1,80 @@
+.we-do {
+  padding-top: 108px;
+  padding-bottom: 108px;
+  background-color: var(--ligth-grey-bg-color);
+}
+.we-do__items {
+  margin-top: 55px;
+  margin-bottom: 55px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 53px 183px; 
+}
+.we-do__item {
+  max-width: 277px;
+}
+.we-do__link  {
+  transition: all 1s ease;
+}
+.we-do__caption {
+  margin-top: 20px;
+  font-family: 'Rubik';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--dark-blue-text-color);
+}
+.we-do__text {
+  margin-top: 13px;
+  line-height: 24px;
+}
+#moreWorksButton {
+  text-align: center;
+}
+//---@media-we-do----------------------
+@media (hover: hover) and (pointer: fine) {
+  .we-do__link:hover {
+    opacity: 0.7;
+  } 
+  .we-do__link .we-do__caption:hover {
+    color: var(--yellow-color);
+  }
+}
+@media (hover: none) {
+  .we-do__link:active {
+    opacity: 0.7;
+  }
+  .we-do__link .we-do__caption:active {
+    color: var(--yellow-color);
+  }
+}
+@media(max-width: 1228px) {
+  .we-do {
+    padding-top: calc(36px + (108 - 36)*((100vw - 320px)/(1228 - 320)));
+    padding-bottom: calc(36px + (108 - 36)*((100vw - 320px)/(1228 - 320)));
+  }
+  .we-do__caption {
+    margin-top: calc(8px + (20 - 8)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(17px + (25 - 17)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(23px + (30 - 23)*((100vw - 320px)/(1228 - 320)));
+  }
+  .we-do__text {
+    margin-top: calc(6px + (13 - 6)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(18px + (24 - 18)*((100vw - 320px)/(1228 - 320)));
+  }
+  .we-do__items {
+    margin-top: calc(30px + (55 - 30)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(25px + (55 - 25)*((100vw - 320px)/(1228 - 320)));
+    column-gap: calc(47px + (183 - 47)*((100vw - 650px)/(1228 - 650)));
+    row-gap: calc(25px + (53 - 25)*((100vw - 320px)/(1228 - 320)));
+  }
+}  
+@media(max-width: 649px) {
+  .we-do__items {
+    column-gap: calc(33px + (47 - 33)*((100vw - 320px)/(1228 - 320)));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}

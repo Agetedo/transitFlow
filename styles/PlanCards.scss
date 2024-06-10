@@ -1,0 +1,101 @@
+.best-pricing__items {
+  margin-top: 64px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 33px;
+  justify-content: center;
+}
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+    transition: all 1s ease-in-out;
+  }
+  20% {
+    transform: translateX(10px) rotate(-3deg);
+  }
+  35% {
+    transform: translateX(-15px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+}
+.best-pricing__card {
+  font-family: 'Rubik';
+  text-align: center;
+  color: var(--dark-blue-text-color);
+  padding: 60px 30px 60px 30px;
+  background-color: var(--ligth-grey-bg-color);
+  cursor: pointer;
+  .title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    color: var(--yellow-color);
+  }
+  .pricing {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  .text {
+    padding-bottom: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 1px solid var(--plan-card-text-border);
+  }
+}
+.best-pricing__card .text:not(:last-child) {
+  margin-bottom: 17px;
+}
+//---@media-best-pricing__card---------
+@media (hover: hover) and (pointer: fine) {
+  .best-pricing__card:hover {
+    animation: wobble-hor-top 0.8s both;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+  } 
+}
+@media (hover: none) {
+  .best-pricing__card:active {
+    animation: wobble-hor-top 0.8s both;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+  }
+}
+@media(max-width: 1228px) {
+  .best-pricing__items {
+    margin-top: calc(20px + (64 - 20)*((100vw - 320px)/(1228 - 320)));
+    gap: calc(7px + (33 - 7)*((100vw - 320px)/(1228 - 320)));
+  }
+ .best-pricing__card {
+    padding-top: calc(20px + (60 - 20)*((100vw - 320px)/(1228 - 320)));
+    padding-right: calc(5px + (30 - 5)*((100vw - 320px)/(1228 - 320)));
+    padding-bottom: calc(20px + (60 - 20)*((100vw - 320px)/(1228 - 320)));
+    padding-left: calc(5px + (30 - 5)*((100vw - 320px)/(1228 - 320)));
+  }
+  .best-pricing__card .title {
+    font-size: calc(16px + (30 - 16)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(20px + (36 - 20)*((100vw - 320px)/(1228 - 320)));
+  }
+  .best-pricing__card .pricing {
+    margin-top: calc(10px + (30 - 10)*((100vw - 320px)/(1228 - 320)));
+    margin-bottom: calc(25px + (60 - 25)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(13px + (48 - 13)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(13px + (48 - 13)*((100vw - 320px)/(1228 - 320)));
+  }
+  .best-pricing__card .text {
+    padding-bottom: calc(8px + (16 - 8)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(11px + (20 - 11)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(12px + (24 - 12)*((100vw - 320px)/(1228 - 320)));
+  }
+  .best-pricing__card .text:not(:last-child) {
+    margin-bottom: calc(9px + (17 - 9)*((100vw - 320px)/(1228 - 320)));
+  }
+}

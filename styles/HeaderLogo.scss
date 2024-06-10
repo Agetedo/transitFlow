@@ -1,0 +1,22 @@
+.header-logo {
+  z-index: 99999999;
+  img {
+    transition: all 1s ease;
+  }
+}
+//---@media-header-logo------------
+@media (hover: hover) and (pointer: fine) {
+  .header-logo img:hover {
+    opacity: 0.5;
+  }
+}
+@media (hover: none) {
+  .header-logo img:active {
+    opacity: 0.5;
+  }
+}
+@media(max-width: 1228px) {
+  .header-logo img {
+    width: calc(187px + (211 - 187)*((100vw - 1024px)/(1228 - 1024)));
+  }
+}

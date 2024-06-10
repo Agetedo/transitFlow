@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+  background-color: var(--header-bg-color);
+  z-index: 2;
+  .conteiner {
+    max-width: 1228px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}

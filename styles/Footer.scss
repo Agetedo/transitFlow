@@ -1,0 +1,185 @@
+.footer-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-logo__link {
+  transition: all 1s ease;
+}
+.footer-contacts {
+  width: 319px;
+}
+.footer-contacts__text { 
+  margin-top: 35px;
+  margin-bottom: 33px;
+  line-height: 24px;
+}
+.footer-hookup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  .text {
+    max-width: 153px;
+    font-size: 14px;
+    line-height: 19px;
+    text-wrap: pretty; 
+  }
+}
+.footer-hookup:not(:last-child) {
+  margin-bottom: 30px;
+}
+.footer-menu {
+  display: flex;
+  align-items: flex-start;
+  gap: 140px;
+}
+.subtitle {
+  margin-bottom: 35px;
+  font-family: 'Rubik';
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.footer-menu__item {
+  line-height: 24px;
+  transition: all 1s ease;
+}
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+#footerPagesMenuList a.active,
+#footerCompanyMenuList a.active {
+  color: var(--yellow-color);
+  cursor: default;
+}
+#footerPagesMenuList a.pending,
+#footerCompanyMenuList a.pending {
+  color: var(--yellow-color);
+  opacity: 0.5;
+}
+#form3 {
+  font-family: 'League Spartan';
+  font-size: 20px;
+  line-height: 20px; 
+  input {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: var(--white-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--blue-color);
+  }
+} 
+#form3 input::placeholder {
+  font-family: 'League Spartan';
+  font-size: 20px;
+  line-height: 20px;
+}
+.footer-error__message {
+  max-width: 160px;
+  margin-bottom: 20px;
+  font-family: 'Krub';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-wrap: pretty;
+  color: var(--error-message-text-color);
+}
+.footer-copyright {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright-text {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  color: var(--grey-text-color);
+}
+//---@media-footer-------------------
+@media (hover: hover) and (pointer: fine) {
+  .footer-logo__link:hover {
+    opacity: 0.5;
+  }
+  .footer-menu__item:hover {
+    opacity: 0.7;
+  }
+}
+@media (hover: none) {
+  .footer-logo__link:active {
+    opacity: 0.5;
+  }
+  #footerPagesMenuList a:active,
+  #footerCompanyMenuList a:active {
+    opacity: 1;
+  }
+}
+@media(max-width: 1228px) {
+  .footer-hookup img {
+    width: calc(41px + (63 - 41)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .footer-hookup .text {
+    font-size: calc(12px + (14 - 12)*((100vw - 1024px)/(1228 - 1024)));
+    line-height: calc(16px + (19 - 16)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .footer-contacts__text {
+    font-size: calc(14px + (16 - 14)*((100vw - 1024px)/(1228 - 1024)));
+    line-height: calc(19px + (24 - 19)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .footer-menu {
+    gap: calc(73px + (140 - 73)*((100vw - 1024px)/(1228 - 1024)));
+  }
+  .footer-menu__item {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(14px + (24 - 14)*((100vw - 320px)/(1228 - 320)));
+  }
+  .subtitle {
+    margin-bottom: calc(24px + (35 - 24)*((100vw - 320px)/(1228 - 320)));
+    font-size: calc(16px + (25 - 16)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(18px + (36 - 18)*((100vw - 320px)/(1228 - 320)));
+  }
+  #form3 {
+    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(14px + (20 - 14)*((100vw - 320px)/(1228 - 320)));
+    input {
+      margin-top: calc(24px + (35 - 24)*((100vw - 320px)/(1228 - 320)));
+      padding: calc(8px + (20 - 8)*((100vw - 320px)/(1228 - 320)));
+    }
+  }
+  #form3 input::placeholder {
+    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(14px + (20 - 14)*((100vw - 320px)/(1228 - 320)));
+  }
+  .footer-error__message {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(16px + (18 - 16)*((100vw - 320px)/(1228 - 320)));
+  }
+  .footer-copyright {
+    margin-top: calc(22px + (30 - 22)*((100vw - 320px)/(1228 - 320)));
+  }
+  .copyright-text {
+    font-size: calc(9px + (11 - 9)*((100vw - 320px)/(1228 - 320)));
+    line-height: calc(11px + (13 - 11)*((100vw - 320px)/(1228 - 320)));
+  }
+}
+@media(max-width: 1024px) {
+  .footer-contacts {
+    display: none;
+  }
+  .footer-items {
+    display: block;
+  }
+  .footer-menu {
+    gap: 30px;
+    justify-content: space-evenly;
+  } 
+}
+@media(max-width: 407px) {
+  .footer-menu {
+    flex-wrap: wrap;
+  }
+  .subtitle {
+    color: var(--yellow-color);
+  }
+}

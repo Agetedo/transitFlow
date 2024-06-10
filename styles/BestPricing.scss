@@ -1,0 +1,237 @@
+.best-pricing {
+  margin-top: 100px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.choose-plan {
+  position: fixed;
+  z-index: 10;
+  padding-top: 14%;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color:var(--heading-caption-bg);
+  cursor: default;
+}
+@keyframes animateTop {
+  from {
+    top: -300px; 
+    opacity: 0;
+  }
+  to {
+    top: 0; 
+    opacity: 1;
+  }
+}
+.modal-content {
+  position: relative;
+  width: 738px;
+  margin: auto;
+  padding: 64px 10px 76px 10px;
+  background-color: var(--yellow-color);
+  border-radius: 8px;
+  animation-name: animateTop;
+  animation-duration: 1s; 
+}
+.choose-plan__close {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  position: absolute; 
+  top: 30px; 
+  right: 30px;
+  span {
+    display: block;
+    line-height: 16px;
+    color: var(--white-color);
+  }
+  img {
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+}
+.choose-plan__icon {
+  margin: 0 auto;
+}
+.choose-plan__title {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-size: 41px;
+  line-height: 41px;
+  text-align: center;
+  color: var(--blue-color);
+  text-transform: capitalize;
+  text-wrap: pretty;
+}
+.best-pricing__plan {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+  text-transform: capitalize;
+  cursor: pointer;
+  input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: var(--yellow-color);
+    border: 1px solid var(--white-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+  }
+}
+.best-pricing__plan input[type="checkbox"] {
+  transition: all 0.5s ease;
+}
+.best-pricing__plan input[type="checkbox"]:checked {
+  background-color: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+.choose-plan__email {
+  display: flex;
+  justify-content: center;
+  input {
+    padding: 17px;
+    width: 319px;
+    line-height: 16px;
+    color: var(--blue-color);
+    background-color: var(--yellow-color);
+    border: 1px solid var(--blue-color);
+    border-right: none;
+    border-radius: 8px 0px 0px 8px;
+  }
+  button {
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+.choose-plan__email input:autofill,
+.choose-plan__email input:-webkit-autofill:focus {
+  color: var(--blue-color);
+  background-color: var(--yellow-color);
+}
+.choose-plan__email input::placeholder {
+  line-height: 16px; 
+}
+.choose-plan__message {
+  display: block;
+  margin-top: 20px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--error-message-text-color);
+}
+//---@media-best-pricing---------
+@media (hover: hover) and (pointer: fine) {
+  .choose-plan__close img:hover {
+    opacity: 0.5;
+  }
+  .best-pricing__plan input[type="checkbox"]:hover {
+    border: 1px solid var(--blue-color);
+  }
+}
+@media (hover: none) {
+  .choose-plan__close img:active {
+    opacity: 0.5;
+  }
+  .best-pricing__plan input[type="checkbox"]:active {
+    border: 1px solid var(--blue-color);
+  }
+}
+@media(max-width: 1228px) {
+  .best-pricing {
+    margin-top: calc(36px + (100 - 36)*((100vw - 320px)/(1228 - 320)));
+  }
+  .choose-plan__email button {
+    font-size: 16px;
+    line-height: 16px;
+    width: 194px;
+    height: 60px;
+  }
+}
+@media(max-width: 1024px) and (orientation: portrait) {
+  .choose-plan {
+    padding-top: 37%;
+  }
+  .modal-content {
+    margin-bottom: 40px;
+  }
+}
+@media(max-width: 1024px) and (orientation: landscape) {
+  .modal-content {
+    margin-bottom: 40px;
+  }
+}
+@media(max-width: 768px) {
+  .modal-content {
+    width: calc(290px + (738 - 290)*((100vw - 320px)/(768 - 320)));
+    padding-top: calc(52px + (64 - 52)*((100vw - 320px)/(768 - 320)));
+    padding-bottom: calc(40px + (76 - 40)*((100vw - 320px)/(768 - 320)));
+  }
+  #form4 {
+    margin-top: calc(15px + (30 - 15)*((100vw - 320px)/(768 - 320)));
+  }
+  .choose-plan__close {
+    top: calc(20px + (30 - 20)*((100vw - 320px)/(768 - 320)));
+    right: calc(20px + (30 - 20)*((100vw - 320px)/(768 - 320)));
+    gap: calc(11px + (19 - 11)*((100vw - 320px)/(768 - 320)));
+  }
+  .choose-plan__close span {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(768 - 320)));
+  }
+  .choose-plan__close img {
+    width: calc(16px + (24 - 16)*((100vw - 320px)/(768 - 320)));
+  }
+  .choose-plan__icon {
+    width: calc(56px + (80 - 56)*((100vw - 320px)/(768 - 320)));
+  }
+  .choose-plan__title {
+    margin-top: calc(10px + (16 - 10)*((100vw - 320px)/(768 - 320)));
+    margin-bottom: calc(18px + (30 - 18)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(20px + (41 - 20)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(25px + (41 - 25)*((100vw - 320px)/(768 - 320)));
+  }
+  .best-pricing__plan {
+    font-size: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320)));
+  }
+  .best-pricing__plan input[type=checkbox] {
+    width: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320))); 
+    height: calc(15px + (20 - 15)*((100vw - 320px)/(768 - 320))); 
+  }
+}
+@media(max-width: 565px) {
+  .choose-plan__email {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(24px + (30 - 24)*((100vw - 320px)/(565 - 320)));
+  }
+  .choose-plan__email input {
+    padding: calc(8px + (17 - 8)*((100vw - 320px)/(565 - 320)));
+    width: calc(270px + (423 - 270)*((100vw - 320px)/(565 - 320)));
+    border-radius: 8px;
+    border: 1px solid var(--blue-color);
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+  }
+  .choose-plan__email input::placeholder,
+  .choose-plan__message {
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+  }
+  .choose-plan__email button {
+    border-radius: 8px;
+    font-size: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+    line-height: calc(12px + (16 - 12)*((100vw - 320px)/(565 - 320)));
+    width: calc(123px + (194 - 123)*((100vw - 320px)/(565 - 320)));
+    height: calc(34px + (60 - 34)*((100vw - 320px)/(565 - 320)));
+  }
+}

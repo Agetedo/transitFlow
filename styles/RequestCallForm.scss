@@ -1,0 +1,93 @@
+#requestFormIcon {
+  margin: 0 auto;
+  animation: ping 0.8s ease-in-out 3 both;
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+.request-form__title {
+  margin: 5px auto 15px auto;
+  max-width: 454px;
+  font-size: 35px;
+  line-height: 38px;
+  text-align: center;
+  color: var(--white-color);
+  text-wrap: pretty;
+}
+#form5 { 
+  text-align: center;
+  font-family: 'League Spartan';
+  font-size: 20px;
+  line-height: 20px; 
+  input {
+    padding: 17px;
+    color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    background-color: var(--yellow-color);
+  }
+  input::placeholder {
+    font-family: 'League Spartan';
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+.request-form__items {
+  margin: 0 auto 30px auto;
+  max-width: 478px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.error-message {
+  margin-bottom: 10px;
+  font-family: 'Krub';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--error-message-text-color);
+}
+//---@media-request-form--------------
+@media(max-width: 768px) {
+  #requestFormIcon {
+    width: calc(50px + (80 - 50)*((100vw - 320px)/(768 - 320)));
+  }
+ .request-form__title {
+    margin-bottom: calc(10px + (15 - 10)*((100vw - 320px)/(768 - 320)));
+    font-size: calc(21px + (35 - 21)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(26px + (38 - 26)*((100vw - 320px)/(768 - 320)));
+  }
+  #form5 {
+    font-size: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
+    input::placeholder {
+      font-size: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
+      line-height: calc(14px + (20 - 14)*((100vw - 320px)/(768 - 320)));
+    }
+  }
+  #form5 input {
+    padding: calc(12px + (17 - 12)*((100vw - 320px)/(768 - 320)));
+  }
+  .request-form__items {
+    margin-bottom: calc(10px + (30 - 10)*((100vw - 320px)/(768 - 320)));
+  }
+  .error-message {
+    font-size: calc(10px + (16 - 10)*((100vw - 320px)/(768 - 320)));
+    line-height: calc(14px + (15 - 14)*((100vw - 320px)/(768 - 320)));
+  }
+}

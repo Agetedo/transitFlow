@@ -1,0 +1,85 @@
+.transporting {
+  padding-top: 86px;
+  padding-bottom: 125px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 100) 62%, rgb(255, 182, 41) 38%);
+  .wrapper {
+    max-width: 1697px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+}
+.transporting__items {
+  margin-top: 35px;
+  margin-bottom: 65px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px; 
+}
+.transporting__link {
+  position: relative; 
+}
+.transporting__title {
+  position: absolute;
+  padding: 20px;
+  bottom: 0; 
+  text-transform: capitalize;
+  transition: all 1s ease;
+  .title {
+    font-family: 'Rubik';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--white-color);
+  }
+  .kind {
+    margin-top: 4px;
+    line-height: 24px;
+    color: var(--yellow-color);
+  }
+}
+#transportingButton {
+  text-align: center;
+}
+//---@media-transporting---------------
+@media (hover: hover) and (pointer: fine) {
+  .transporting__link:hover {
+    filter: saturate(150%);
+    .transporting__title {
+      display: none;
+    }
+  }
+}
+@media (hover: none) {
+  .transporting__link:active {
+    filter: saturate(150%);
+    .transporting__title {
+      display: none;
+    }
+  }
+}
+@media(max-width: 1697px) {
+  .transporting {
+    padding-top: calc(44px + (86 - 44)*((100vw - 1025px)/(1697 - 1025)));
+    padding-bottom: calc(32px + (125 - 32)*((100vw - 1025px)/(1697 - 1025)));
+  }
+  .transporting__title {
+    padding: calc(9px + (20 - 9)*((100vw - 1025px)/(1697 - 1025)));
+    .title {
+      font-size: calc(16px + (20 - 16)*((100vw - 1025px)/(1697 - 1025)));
+      line-height: calc(19px + (24 - 19)*((100vw - 1025px)/(1697 - 1025)));
+    }
+    .kind {
+      font-size: calc(11px + (16 - 11)*((100vw - 1025px)/(1697 - 1025)));
+      line-height: calc(16px + (24 - 16)*((100vw - 1025px)/(1697 - 1025)));
+    }
+  }
+  .transporting__items {
+    margin-top: calc(23px + (35 - 23)*((100vw - 1025px)/(1697 - 1025)));
+    margin-bottom: calc(43px + (65 - 43)*((100vw - 1025px)/(1697 - 1025)));
+  }
+}
+@media(max-width: 1024px) {
+  .transporting {
+    display: none;
+  }
+}
