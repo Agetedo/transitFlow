@@ -1,7 +1,7 @@
 <h1><a href="https://trfl.netlify.app/" target="_blank">TransitFlow </a> <<< link to this project</h1>
 
 <ul>
-  <li>React(hooks), Vite</li>
+  <li>React(Hooks), Vite</li>
   <li>react-dom</li>
   <li>react-router-dom(createBrowserRouter)</li>
   <li>react-accessible-accordion</li>
