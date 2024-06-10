@@ -2,12 +2,16 @@
 
 <ul>
   <li>React(hooks), Vite</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>react-dom</li>
+  <li>react-router-dom(createBrowserRouter)</li>
+  <li>react-accessible-accordion</li>
+  <li>react-error-boundary</li>
+  <li>react-hook-form</li>
+  <li>react-tabs</li>
+  <li>react-accessible-accordion</li>
+  <li>loader-utils</li>
   <li>swiper</li>
-   <li>Sass(scss)</li>
+  <li>eslint</li>
+  <li>autoprefixer</li>
+  <li>Sass(scss)</li>
 </ul>
