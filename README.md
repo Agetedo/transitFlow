@@ -1,4 +1,4 @@
-<h1><a href="https://trfl.netlify.app/" target="_blank">TransitFlow</a>     link to this project</h1>
+<h1><a href="https://trfl.netlify.app/" target="_blank">TransitFlow</a>(<<< link to this project)</h1>
 
 <ul>
   <li>React(hooks), Vite</li>
