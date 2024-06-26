@@ -1,1 +1,0 @@
-import{j as t}from"./index-CocXBAyv.js";function r({type:s,onClick:e,buttonText:n}){return t.jsx("button",{className:"button-dark",type:s,onClick:e,children:n})}function i({caption:s,title:e}){return t.jsxs("div",{className:"title__left",children:[t.jsx("h3",{className:"caption",children:s}),t.jsx("h2",{className:"title",children:e})]})}export{r as B,i as T};

@@ -1,1 +1,0 @@
-import{j as e}from"./index-CocXBAyv.js";function n({caption:s,title:t,style:i}){return e.jsxs("div",{className:"title__center",style:i,children:[e.jsx("h3",{className:"caption",children:s}),e.jsx("h2",{className:"title",children:t})]})}export{n as T};
