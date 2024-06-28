@@ -8,7 +8,6 @@
   <li>react-error-boundary</li>
   <li>react-hook-form</li>
   <li>react-tabs</li>
-  <li>react-accessible-accordion</li>
   <li>loader-utils</li>
   <li>swiper</li>
   <li>eslint</li>
